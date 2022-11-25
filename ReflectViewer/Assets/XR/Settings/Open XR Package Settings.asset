@@ -77,7 +77,8 @@ MonoBehaviour:
   - {fileID: 3815046040661260868}
   - {fileID: 9054189386101967454}
   - {fileID: -804273840831697117}
-  - {fileID: 0}
+  - {fileID: 2862384594935655010}
+  - {fileID: 8500817815548001697}
   - {fileID: 2731894357179034176}
   - {fileID: -4691596633277388761}
   m_renderMode: 1
@@ -96,16 +97,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: 5491567061161696254}
-  - {fileID: 8466533601687602602}
   - {fileID: 5345141887982086243}
   - {fileID: 7576851593976020145}
   - {fileID: 6223191972014443031}
   - {fileID: 7828562549891489896}
   - {fileID: -7062256132739144991}
+  - {fileID: 8466533601687602602}
   - {fileID: 8991570103636028478}
-  - {fileID: 5742933082840377427}
-  - {fileID: -1579448782675043964}
   - {fileID: -4651134813643470327}
+  - {fileID: 5742933082840377427}
   m_renderMode: 1
   m_depthSubmissionMode: 0
 --- !u!114 &-5740409046310629286
@@ -192,6 +192,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+  targetQuest: 1
+  targetQuest2: 1
 --- !u!114 &-3741800660370735353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +445,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &2862384594935655010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de993716e042c6499d0c18eed3a773c, type: 3}
+  m_Name: MockRuntime Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Mock Runtime
+  version: 0.0.2
+  featureIdInternal: com.unity.openxr.feature.mockruntime
+  openxrExtensionStrings: XR_UNITY_null_gfx XR_UNITY_android_present
+  company: Unity
+  priority: 0
+  required: 0
+  ignoreValidationErrors: 0
 --- !u!114 &3815046040661260868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,13 +660,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 0
   nameUi: Mock Runtime
-  version: 0.0.1
+  version: 0.0.2
   featureIdInternal: com.unity.openxr.feature.mockruntime
-  openxrExtensionStrings: XR_UNITY_null_gfx
+  openxrExtensionStrings: XR_UNITY_null_gfx XR_UNITY_android_present
   company: Unity
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+--- !u!114 &8500817815548001697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef793c31862a37448e907829482ef80, type: 3}
+  m_Name: OculusQuestFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Oculus Quest Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.oculusquest
+  openxrExtensionStrings: XR_OCULUS_android_initialize_loader
+  company: Unity
+  priority: 0
+  required: 0
+  targetQuest: 1
+  targetQuest2: 1
 --- !u!114 &8991570103636028478
 MonoBehaviour:
   m_ObjectHideFlags: 0
